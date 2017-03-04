@@ -1,0 +1,61 @@
+<!doctype html>
+<!--
+This is the HTML code for the untriggered Google Chrome extension.
+ -->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Options for Untriggered</title>
+    <link rel="stylesheet" media="screen" href="untriggered.css">
+	<link rel="stylesheet" media="screen" href="modal.css">
+	<script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      <img style="float:left;" src="icon.png" height=75"/>
+      <h1> Untriggered <span id="browser_span"> </span></h1>
+	</div>
+    <div id="content">
+      <div id="foregroundDiv">
+        <div id="listsDiv">
+          <div id="listBlack">
+		  <h2>Trigger List</h2>
+            <p>Keep yourself Untriggered with this extension. Hide words or phrases for your well-being:</p><br />
+			<div align="center" id="triggers"></div>
+			<div align="center">
+			<p></p>
+			<button style="width:50px" id="add_btn" type="button3">+</button>
+			<button style="width:50px" id="remove_btn" type="button3">-</button>
+			<button id="save_btn" type="button">Save</button>
+			</div>
+
+			<!-- Trigger/Open The Modal
+			<button id="myBtn">Open Modal</button>
+
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">x</span>
+				<p>Some text in the Modal..</p>
+				</div>
+
+			</div>
+
+          <h2>About Untriggered</h2><p>Untriggered aims to protect internet users from unwelcome content that may keep them from having an enjoyable and safe online experience. Out program allows users to select words that may trigger unwelcome memories or emotions, while still giving the user the ultimate decision. </p><br />
+          <p>This extension was made by Shreya Patel and Ivey Dyson - two University of Oklahoma students - for Hack_UTD 2017!</p><br />
+          <p>We hope Untriggered makes your internet experience more enjoyable.</p>
+          </div>
+        </div>
+      </div>
+      <div id="spacer">
+        &nbsp;
+      </div>
+      <div id="version_div"> </div>
+    </div>
+  </body>
+  <script src="modal.js"></script>
+</html>

@@ -1,0 +1,30 @@
+{
+	"manifest_version":2,
+	"name":"untriggered",
+	"description":"Keep yourself Untriggered with this extension.",
+	"version": "1.0",
+
+
+	"browser_action":{
+		"default_icon":"icon.png",
+		"default_popup":"popup.html",
+		"default_title":"Untriggered"
+	},
+      "background": {
+      "scripts": ["background.js", "triggerwarning.js"],
+      "persistent": false
+    },
+	"content_scripts": [ {
+
+		"js": [ "scanner.js" ],
+		"matches": [ "http://*/*", "https://*/*" ],
+		"run_at": "document_idle"
+	} ],
+
+	"permissions":[
+		"activeTab",
+		"storage",
+        "https://*/*",
+        "https://*/*"
+	]
+}
